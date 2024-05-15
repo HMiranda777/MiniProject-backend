@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Summary</title>
+</head>
+<body>
+  <h1>Your order details for this month:</h1>
+
+    {% for i in details %}
+        <h3>{{ loop.index }}. <u>{{ i.product_name }}</u></h3>
+        <h5>Total Quantity Purchased: {{ i.quantity }}</h5>
+        <h5>Price: {{ i.price }}</h5>
+        {%set total= i.quantity * i.price%}
+        <h5>Total: {{ i.quantity * i.price }} </h5>
+         <h6>Timestamp: {{i.date}}</h6>
+    {% endfor %}
+    <h3>Grand Total : {{ total }}</h3>
+</body>
+</html>

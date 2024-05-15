@@ -1,0 +1,5 @@
+product_id,product_name,quantity,rate_per_unit,quantity_sold
+1,apple,18,123,5
+3,carrot,55,123,12
+4,milk,784,34,7
+2,orange,5,123,62
